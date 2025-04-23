@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandi Gang Squad Troop Gang</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Pandi Gang Logo" class="logo">
+            <h1>Pandi Gang</h1>
+            <p class="subtitle">Squad Troop Gang</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#musica">Música</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Bienvenidos a <span class="highlight">Pandi Gang</span></h2>
+                <p>Colectivo musical en constante evolución</p>
+                <a href="#musica" class="cta-button">Escuchar Ahora</a>
+            </div>
+        </section>
+
+        <section id="musica" class="music-section">
+            <h2>Nuestra Música</h2>
+            <div class="latest-release">
+                <h3>Último Lanzamiento: Mambo Mario V1</h3>
+                <div class="album-cover">
+                    <img src="images/logo.jpg" alt="Mambo Mario V1 Cover" class="album-img">
+                    <div class="play-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="music-platforms">
+                    <h4>Escúchanos en:</h4>
+                    <div class="platform-links">
+                        <a href="https://open.spotify.com/intl-es/album/5z3VjoqA1DAEKwV8UQp0Hp" target="_blank" class="platform-link spotify">
+                            <i class="fab fa-spotify"></i>
+                            <span>Spotify</span>
+                        </a>
+                        <a href="https://music.apple.com/us/album/mambo-mario-v1-single/1809479578" target="_blank" class="platform-link apple">
+                            <i class="fab fa-apple"></i>
+                            <span>Apple Music</span>
+                        </a>
+                        <a href="https://www.deezer.com/es/album/744663741" target="_blank" class="platform-link deezer">
+                            <img src="https://cdns-images.dzcdn.net/images/common/favicon/favicon-32x32.png" alt="Deezer" class="platform-icon">
+                            <span>Deezer</span>
+                        </a>
+                        <a href="https://music.amazon.es/albums/B0F5M8V9GQ" target="_blank" class="platform-link amazon">
+                            <i class="fab fa-amazon"></i>
+                            <span>Amazon Music</span>
+                        </a>
+                        <a href="https://music.youtube.com/playlist?list=OLAK5uy_nzpA_Bfhpq572ebeiPDpCqw80F_Kf92nw" target="_blank" class="platform-link youtube">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube Music</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="spotify-embed">
+                <iframe src="https://open.spotify.com/embed/album/5z3VjoqA1DAEKwV8UQp0Hp" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="about-section">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-content">
+                <p>Somos Pandi Gang, un colectivo musical en constante evolución. Nuestro nombre completo es Pandi Gang Squad Troop Gang, pero nos conocen simplemente como Pandi Gang.</p>
+                <p>Creamos música que desafía los límites y conecta con nuestros oyentes a un nivel profundo. Nuestra misión es llevar nuestra visión artística a todos los rincones del mundo.</p>
+            </div>
+        </section>
+
+        <section id="eventos" class="events-section">
+            <h2>Próximos Eventos</h2>
+            <div class="events-container">
+                <p class="no-events">Próximamente anunciaremos nuevos eventos. ¡Mantente atento!</p>
+                <!-- Los eventos se añadirán dinámicamente aquí -->
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <h2>Contacto</h2>
+            <div class="contact-content">
+                <p>¿Quieres colaborar con nosotros o tienes alguna pregunta? ¡Contáctanos!</p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="Pandi Gang Logo" class="footer-logo-img">
+                <h3>Pandi Gang</h3>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Pandi Gang Squad Troop Gang. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dynamic-features.js"></script>
+</body>
+</html>
