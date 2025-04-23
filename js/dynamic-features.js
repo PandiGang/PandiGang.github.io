@@ -26,10 +26,10 @@ function createParticleEffect() {
         constructor() {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 15 + 5;
+            this.size = Math.random() * 25 + 5;
             this.speedX = Math.random() * 3 - 1.5;
             this.speedY = Math.random() * 3 - 1.5;
-            this.opacity = Math.random() * 0.5 + 0.1;
+            this.opacity = Math.random() * 0.8 + 0.1;
             this.rotation = Math.random() * Math.PI * 2;
             this.rotationSpeed = Math.random() * 0.02 - 0.01;
         }
@@ -56,7 +56,7 @@ function createParticleEffect() {
     
     // Crear partículas
     const particles = [];
-    const particleCount = 15; // Número de partículas
+    const particleCount = 10; // Número de partículas
     
     for (let i = 0; i < particleCount; i++) {
         particles.push(new Particle());

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pandi Gang Squad Troop Gang</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -17,11 +21,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#musica">Música</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="menu-toggle">
@@ -30,18 +34,18 @@
     </header>
 
     <main>
-        <section id="inicio" class="hero">
+        <section id="home" class="hero">
             <div class="hero-content">
-                <h2>Bienvenidos a <span class="highlight">Pandi Gang</span></h2>
-                <p>Colectivo musical en constante evolución</p>
-                <a href="#musica" class="cta-button">Escuchar Ahora</a>
+                <h2><span class="highlight">Pandi Gang</span> Squad Troop Gang</h2>
+                <!--<p>Colectivo musical en constante evolución</p>-->
+                <a href="#musica" class="cta-button">Listen now</a>
             </div>
         </section>
 
-        <section id="musica" class="music-section">
-            <h2>Nuestra Música</h2>
+        <section id="music" class="music-section">
+            <h2>Music</h2>
             <div class="latest-release">
-                <h3>Último Lanzamiento: Mambo Mario V1</h3>
+                <h3>Recent releases: Mambo Mario V1</h3>
                 <div class="album-cover">
                     <img src="images/logo.jpg" alt="Mambo Mario V1 Cover" class="album-img">
                     <div class="play-overlay">
@@ -49,7 +53,7 @@
                     </div>
                 </div>
                 <div class="music-platforms">
-                    <h4>Escúchanos en:</h4>
+                    <h4>Find us:</h4>
                     <div class="platform-links">
                         <a href="https://open.spotify.com/intl-es/album/5z3VjoqA1DAEKwV8UQp0Hp" target="_blank" class="platform-link spotify">
                             <i class="fab fa-spotify"></i>
@@ -60,7 +64,7 @@
                             <span>Apple Music</span>
                         </a>
                         <a href="https://www.deezer.com/es/album/744663741" target="_blank" class="platform-link deezer">
-                            <img src="https://cdns-images.dzcdn.net/images/common/favicon/favicon-32x32.png" alt="Deezer" class="platform-icon">
+                            <img src="https://cdn-files.dzcdn.net/cache/images/common/favicon/favicon-16x16.1e6ae1b5b7794f3e00c0.png" alt="Deezer" class="platform-icon">
                             <span>Deezer</span>
                         </a>
                         <a href="https://music.amazon.es/albums/B0F5M8V9GQ" target="_blank" class="platform-link amazon">
@@ -80,29 +84,28 @@
             </div>
         </section>
 
-        <section id="sobre-nosotros" class="about-section">
-            <h2>Sobre Nosotros</h2>
+        <section id="about-us" class="about-section">
+            <h2>About Us</h2>
             <div class="about-content">
-                <p>Somos Pandi Gang, un colectivo musical en constante evolución. Nuestro nombre completo es Pandi Gang Squad Troop Gang, pero nos conocen simplemente como Pandi Gang.</p>
-                <p>Creamos música que desafía los límites y conecta con nuestros oyentes a un nivel profundo. Nuestra misión es llevar nuestra visión artística a todos los rincones del mundo.</p>
+                <p>Born from the primordial crucible, our sound is a remnant of the pre-linguistic scream—an echo that fractures axioms and dissolves sacred order. We are not origin, we are corollary: the inevitable result of Chaos unbound. Each tone is a rupture, a forbidden symbol carved into silence, resonating where logic fails and the veil thins. From the ashes of broken structures, we summon the only harmony that matters—one forged in the abyss.</p>
             </div>
         </section>
 
-        <section id="eventos" class="events-section">
-            <h2>Próximos Eventos</h2>
+        <section id="events" class="events-section">
+            <h2>Upcoming Events</h2>
             <div class="events-container">
-                <p class="no-events">Próximamente anunciaremos nuevos eventos. ¡Mantente atento!</p>
-                <!-- Los eventos se añadirán dinámicamente aquí -->
+                <p class="no-events">The next echoes are near. Stay alert.</p>
+                <!-- Events dynamicaly added here -->
             </div>
         </section>
 
-        <section id="contacto" class="contact-section">
-            <h2>Contacto</h2>
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
             <div class="contact-content">
-                <p>¿Quieres colaborar con nosotros o tienes alguna pregunta? ¡Contáctanos!</p>
+                <p>Desire for communion or knowledge? Channel your message to us.</p>
                 <form id="contact-form" class="contact-form">
                     <div class="form-group">
-                        <label for="name">Nombre</label>
+                        <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
@@ -110,10 +113,10 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Mensaje</label>
+                        <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="submit-button">Enviar Mensaje</button>
+                    <button type="submit" class="submit-button">Send message</button>
                 </form>
             </div>
         </section>
@@ -131,7 +134,7 @@
                 <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
             </div>
-            <p class="copyright">&copy; 2025 Pandi Gang Squad Troop Gang. Todos los derechos reservados.</p>
+            <p class="copyright">&copy; 2025 Pandi Gang Squad Troop Gang. All rights reserved.</p>
         </div>
     </footer>
 

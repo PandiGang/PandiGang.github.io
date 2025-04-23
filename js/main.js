@@ -40,10 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 section.style.opacity = '1';
                 section.style.transform = 'translateY(0)';
             }
+            else {
+                section.style.opacity = '0';
+            }
         });
     };
 
-    // Inicializar animaciones
+    // Initiallize animations
     sections = document.querySelectorAll('section:not(.hero)');
     sections.forEach(section => {
         section.style.opacity = '0';
@@ -51,20 +54,20 @@ document.addEventListener('DOMContentLoaded', function() {
         section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
     });
 
-    // Ejecutar animación al cargar y al hacer scroll
+    // Run animation on load and scroll
     animateOnScroll();
     window.addEventListener('scroll', animateOnScroll);
 
-    // Integración con Spotify y otras plataformas
+    // Integrate with platforms
     const albumCover = document.querySelector('.album-cover');
     const playOverlay = document.querySelector('.play-overlay');
     
-    // Reproducir en Spotify al hacer clic en la portada del álbum
+    // Play on spotify
     albumCover.addEventListener('click', function() {
         window.open('https://open.spotify.com/intl-es/album/5z3VjoqA1DAEKwV8UQp0Hp', '_blank');
     });
 
-    // Efecto hover para los enlaces de plataformas
+    // Hover effect for platforms
     const platformLinks = document.querySelectorAll('.platform-link');
     platformLinks.forEach(link => {
         link.addEventListener('mouseenter', function() {
@@ -78,14 +81,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Formulario de contacto
+    // Contact form
     const contactForm = document.getElementById('contact-form');
     
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Aquí normalmente se enviaría el formulario a un servidor
-        // Como es un sitio estático, mostramos un mensaje de éxito
+        // TODO: send message
         
         const formData = new FormData(contactForm);
         let formValues = {};
@@ -94,13 +96,13 @@ document.addEventListener('DOMContentLoaded', function() {
             formValues[key] = value;
         }
         
-        // Limpiar el formulario
+        // Clean form
         contactForm.reset();
         
-        // Mostrar mensaje de éxito
+        // Show message
         const successMessage = document.createElement('div');
         successMessage.classList.add('success-message');
-        successMessage.textContent = '¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.';
+        successMessage.textContent = 'Message transmitted through the aeons! We shall reach out to you when the stars align with our destiny';
         successMessage.style.color = '#2ecc71';
         successMessage.style.padding = '1rem';
         successMessage.style.marginTop = '1rem';
@@ -109,13 +111,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         contactForm.parentNode.appendChild(successMessage);
         
-        // Eliminar el mensaje después de 5 segundos
+        // Delete message after timeout
         setTimeout(() => {
             successMessage.remove();
         }, 5000);
     });
 
-    // Efecto de mosaico animado para el fondo
+    // Mossaic effect
     const createMosaicAnimation = function() {
         const body = document.body;
         const bodyBefore = window.getComputedStyle(body, '::before');
@@ -129,10 +131,10 @@ document.addEventListener('DOMContentLoaded', function() {
             requestAnimationFrame(animateMosaic);
         }
         
-        // Añadir variable CSS para la posición del mosaico
+        // Add css variable
         document.documentElement.style.setProperty('--mosaic-position', '0px');
         
-        // Actualizar el estilo del pseudo-elemento
+        // Update style of pseudo-element
         const style = document.createElement('style');
         style.textContent = `
             body::before {
@@ -141,11 +143,11 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         document.head.appendChild(style);
         
-        // Iniciar la animación
+        // Init animation
         animateMosaic();
     };
     
-    // Iniciar la animación del mosaico
+    // Init animation
     createMosaicAnimation();
 });
 
