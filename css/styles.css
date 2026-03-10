@@ -332,6 +332,10 @@ nav a:hover::after {
     color: #1DB954;
 }
 
+.instagram {
+    color: #cc61be;
+}
+
 .apple {
     color: #FB233B;
 }
